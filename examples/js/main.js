@@ -66,3 +66,17 @@ $(); // Calling the $ function
 // map() provides each array element to a function where it will be modified and returned, creating a new array.
 // filter() tests array elements against a condition and returns only those elements that pass
 // reduce() group an arrays elements into a single value
+
+
+
+//Hoisting
+
+var scope = 'global';
+
+function checkScope() {
+   console.log(scope); //undefined
+
+    var scope = 'local';
+    console.log(scope); // local
+}
+checkScope();
